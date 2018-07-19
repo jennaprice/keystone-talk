@@ -1,0 +1,28 @@
+
+
+<div class="container">
+    <div class="row">
+        <h1>About Our Team </h1>
+    </div>
+    <div class="row" style="text-align: center;">
+        
+        {{# each data.teamMembers}}
+        <div class="col">
+            <h3> {{{name}}}</h3>
+            {{#if image}}
+            <img src="{{{cloudinaryUrl image}}}" style="border-radius: 100%;">
+            {{/if}}
+            <h5>{{{title}}}</h5>
+            <p> {{{content}}}</p>
+        </div>
+            
+        {{/each}} 
+      <div class="row">
+          <h1>About Our Company</h1>
+          <p>All the important information that you need to know about our wonderful company.We can't believe
+              you are still reading this its crazy. Nothing else here. Stop. Seriously stop, what's wrong with 
+              you? I wish there was more to say but there isn't.
+          </p>
+      </div>
+    </div>
+</div>
